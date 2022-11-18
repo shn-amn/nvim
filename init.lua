@@ -14,3 +14,5 @@ require('plug')      -- Plugins
 
 require('noir')      -- 256_noir
 require('tree')      -- NvimTree
+
+require('mtls')

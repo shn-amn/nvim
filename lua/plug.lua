@@ -6,6 +6,7 @@ return require('packer').startup(function(use)
   use 'kyazdani42/nvim-tree.lua'                     -- file tree
   use 'mhinz/vim-startify'                           -- start screen
   use 'DanilaMihailov/beacon.nvim'                   -- cursor jump
+  use 'nvim-lua/plenary.nvim'                        -- used for `nvim-metals`
 
   use 'dracula/vim'
   use 'jacoborus/tender.vim'
@@ -14,6 +15,16 @@ return require('packer').startup(function(use)
   use 'NLKNguyen/papercolor-theme'
   use 'bluz71/vim-moonfly-colors'
 
-  use { 'ray-x/go.nvim', requires = 'ray-x/guihua.lua' }
+  use {
+    "hrsh7th/nvim-cmp",
+    requires = {
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-vsnip",
+      "hrsh7th/vim-vsnip",
+    },
+  }
+
+  use { 'ray-x/go.nvim',         requires = 'ray-x/guihua.lua' }
+  use { 'scalameta/nvim-metals', requires = 'nvim-lua/plenary.nvim' }
   use 'cespare/vim-toml'
 end)
