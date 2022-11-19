@@ -8,12 +8,14 @@ return require('packer').startup(function(use)
   use 'DanilaMihailov/beacon.nvim'                   -- cursor jump
   use 'nvim-lua/plenary.nvim'                        -- used for `nvim-metals`
 
-  use 'dracula/vim'
+  use 'dracula/vim'                                  -- colorschemes
   use 'jacoborus/tender.vim'
   use 'andreasvc/vim-256noir'
   use 'wuelnerdotexe/vim-enfocado'
   use 'NLKNguyen/papercolor-theme'
   use 'bluz71/vim-moonfly-colors'
+
+  use 'f-person/git-blame.nvim'                      -- git
 
   use {
     "hrsh7th/nvim-cmp",

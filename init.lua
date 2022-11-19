@@ -12,7 +12,9 @@ require('opts')      -- Options
 require('keys')      -- Keymaps
 require('plug')      -- Plugins
 
-require('noir')      -- 256_noir
 require('tree')      -- NvimTree
+require('line')      -- Lualine
+require('noir')      -- 256_noir
 
-require('mtls')
+require('mtls')      -- Scala Metals
+
