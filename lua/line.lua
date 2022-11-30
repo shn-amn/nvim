@@ -59,3 +59,31 @@ gitsigns.setup({
 
 vim.g.gitblame_display_virtual_text = 0
 vim.g.gitblame_date_format = '%d %b %y'
+
+require('telescope').setup{
+  defaults = {
+	preview = false,
+	borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+	layout_config = { horizontal = { width = 0.33, height = 0.66 } },
+	mappaings = { i = { ["<ESC>"] = require('telescope.actions').close } }
+    -- Default configuration for telescope goes here:
+    -- config_key = value,
+    -- ..
+  },
+  pickers = {
+    -- Default configuration for builtin pickers goes here:
+    -- picker_name = {
+    --   picker_config_key = value,
+    --   ...
+    -- }
+    -- Now the picker_config_key will be applied every time you call this
+    -- builtin picker
+  },
+  extensions = {
+    -- Your extension configuration goes here:
+    -- extension_name = {
+    --   extension_config_key = value,
+    -- }
+    -- please take a look at the readme of the extension you want to configure
+  }
+}
