@@ -2,12 +2,13 @@
 local opt = vim.opt
 
 -- [[ Context ]]
--- opt.colorcolumn = '120'       -- str:  Show col for max line length
+opt.colorcolumn = '100,120'      -- str:  Show col for max line length
 opt.number = true                -- bool: Show line numbers
 opt.relativenumber = false       -- bool: Show relative line numbers
 opt.wrap = false
 opt.scrolloff = 4                -- int:  Min num lines of context
 opt.signcolumn = 'yes'           -- str:  Show the sign column
+opt.mouse = ''
 
 -- [[ Filetypes ]]
 opt.encoding = 'utf8'            -- str:  String encoding to use

@@ -3,6 +3,7 @@ require("nvim-tree").setup({
   view = {
     adaptive_size = true,
 	width = 24,
+	side = 'right',
     mappings = {
       list = {
         { key = "u", action = "dir_up" },
