@@ -15,18 +15,21 @@ return require('packer').startup(function(use)
   use 'NLKNguyen/papercolor-theme'
   use 'bluz71/vim-moonfly-colors'
 
+  use 'akinsho/toggleterm.nvim'                      -- terminal
   use 'f-person/git-blame.nvim'                      -- git
+  use 'lewis6991/gitsigns.nvim'
 
   use {
-    "hrsh7th/nvim-cmp",
+    'hrsh7th/nvim-cmp',
     requires = {
-      "hrsh7th/cmp-nvim-lsp",
-      "hrsh7th/cmp-vsnip",
-      "hrsh7th/vim-vsnip",
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-vsnip',
+      'hrsh7th/vim-vsnip',
     },
   }
 
   use { 'ray-x/go.nvim',         requires = 'ray-x/guihua.lua' }
   use { 'scalameta/nvim-metals', requires = 'nvim-lua/plenary.nvim' }
   use 'cespare/vim-toml'
+  use 'fladson/vim-kitty'
 end)

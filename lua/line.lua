@@ -1,5 +1,7 @@
-local gitblame = require('gitblame')
 local lualine  = require('lualine')
+local terminal = require('toggleterm')
+local gitblame = require('gitblame')
+local gitsigns = require('gitsigns')
 
 lualine.setup({
   options = {
@@ -40,6 +42,19 @@ lualine.setup({
   winbar = {},
   inactive_winbar = {},
   extensions = {}
+})
+
+terminal.setup()
+
+gitsigns.setup({ 
+  signs = {
+    add          = { hl = 'GitSignsAdd'   , text = '│', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'    },
+    change       = { hl = 'GitSignsChange', text = '│', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn' },
+    delete       = { hl = 'GitSignsDelete', text = '_', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn' },
+    topdelete    = { hl = 'GitSignsDelete', text = '‾', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn' },
+    changedelete = { hl = 'GitSignsChange', text = '│', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn' },
+    untracked    = { hl = 'GitSignsAdd'   , text = '┆', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'    },
+  },
 })
 
 vim.g.gitblame_display_virtual_text = 0
