@@ -1,1 +1,1 @@
-syntax keyword scalaKeyword given using summon extension then enum
+syntax keyword scalaKeyword given using summon extension then enum sealed
