@@ -3,8 +3,8 @@ local kmap = vim.keymap.set
 
 -- map('i', 'jk', '', {})
 
-map('n', 'e', [[:NvimTreeFocus<CR>]], {})
-map('n', 'ce', [[:NvimTreeClose<CR>]], {})
+map('n', '<leader>e', [[:NvimTreeFocus<CR>]], {})
+map('n', '<leader>ce', [[:NvimTreeClose<CR>]], {})
 
 map('n', 'term',  [[:ToggleTerm direction=float]], {})
 map('t', '<esc>', [[<C-\><C-n>|:quit]],            {})

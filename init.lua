@@ -14,3 +14,5 @@ require('line')      -- Lualine
 require('noir')      -- 256_noir
 
 require('mtls')      -- Scala Metals
+require('rust')      -- rust-tools
+require('pytn')      -- Microsoft pyright

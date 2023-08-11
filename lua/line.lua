@@ -64,7 +64,7 @@ require('telescope').setup{
   defaults = {
 	preview = false,
 	borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
-	layout_config = { horizontal = { width = 0.33, height = 0.66 } },
+	layout_config = { horizontal = { width = 0.66, height = 0.66 } },
 	mappaings = { i = { ["<ESC>"] = require('telescope.actions').close } }
     -- Default configuration for telescope goes here:
     -- config_key = value,

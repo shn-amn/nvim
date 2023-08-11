@@ -30,8 +30,9 @@ return require('packer').startup(function(use)
     },
   }
 
-  use { 'ray-x/go.nvim',         requires = 'ray-x/guihua.lua' }
-  use { 'scalameta/nvim-metals', requires = 'nvim-lua/plenary.nvim' }
+  use { 'ray-x/go.nvim',            requires = 'ray-x/guihua.lua' }
+  use { 'scalameta/nvim-metals',    requires = 'nvim-lua/plenary.nvim' }
+  use { 'simrat39/rust-tools.nvim', requires = 'neovim/nvim-lspconfig'}
   use 'cespare/vim-toml'
   use 'fladson/vim-kitty'
 end)
