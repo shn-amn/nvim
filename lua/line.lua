@@ -62,10 +62,10 @@ vim.g.gitblame_date_format = '%d %b %y'
 
 require('telescope').setup{
   defaults = {
-	preview = false,
-	borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
-	layout_config = { horizontal = { width = 0.66, height = 0.66 } },
-	mappaings = { i = { ["<ESC>"] = require('telescope.actions').close } }
+    preview = false,
+    borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+    layout_config = { horizontal = { width = 0.66, height = 0.66 } },
+    mappaings = { i = { ["<ESC>"] = require('telescope.actions').close } }
     -- Default configuration for telescope goes here:
     -- config_key = value,
     -- ..
