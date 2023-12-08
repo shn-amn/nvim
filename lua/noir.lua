@@ -35,13 +35,13 @@ cmd 'highlight Tag         cterm=none ctermfg=1 ctermbg=none'
 cmd 'highlight Define      cterm=italic ctermfg=250 ctermbg=none'
 cmd 'highlight Macro       cterm=bold ctermfg=250 ctermbg=none'
 cmd 'highlight Delimiter   cterm=none ctermfg=240 ctermbg=none'
--- PreProc        xxx ctermfg=81 guifg=#ff80ff
+-- PreProc        ctermfg=81 guifg=#ff80ff
 --                    links to Keyword
--- PreCondit      xxx links to Keyword
--- StorageClass   xxx links to Keyword
--- Typedef        xxx links to Keyword
--- Tag            xxx links to Number
--- Special        xxx ctermfg=224 guifg=Orange
+-- PreCondit      links to Keyword
+-- StorageClass   links to Keyword
+-- Typedef        links to Keyword
+-- Tag            links to Number
+-- Special        ctermfg=224 guifg=Orange
 
 cmd 'highlight GitSignsAdd        ctermfg=250 ctermbg=0'
 cmd 'highlight GitSignsChange     ctermfg=160 ctermbg=0'
@@ -74,4 +74,48 @@ cmd 'highlight lualine_b_diagnostics_warn_normal ctermfg=3'
 cmd 'highlight lualine_b_diagnostics_warn_normal ctermfg=3'
 cmd 'highlight lualine_b_diagnostics_warn_normal ctermfg=3'
 
-cmd 'highlight DiagnosticUnderlineWarn           guisp=Yellow'
+cmd 'highlight DiagnosticError ctermfg=9   guifg=Red'
+cmd 'highlight DiagnosticWarn  ctermfg=11  guifg=Yellow'
+cmd 'highlight DiagnosticInfo  ctermfg=12  guifg=LightBlue'
+cmd 'highlight DiagnosticHint  ctermfg=252 guifg=LightGrey'
+cmd 'highlight DiagnosticOk    ctermfg=10  guifg=LightGreen'
+cmd 'highlight DiagnosticUnderlineError cterm=underline gui=underline guisp=Red'
+cmd 'highlight DiagnosticUnderlineWarn  cterm=underline gui=underline guisp=Yellow'
+cmd 'highlight DiagnosticUnderlineInfo  cterm=underline gui=underline guisp=Blue'
+cmd 'highlight DiagnosticUnderlineHint  cterm=underline gui=underline guisp=LightGrey'
+cmd 'highlight DiagnosticUnderlineOk    cterm=underline gui=underline guisp=Green'
+cmd 'highlight DiagnosticFloatingError  ctermfg=9   ctermbg=232 guifg=Red       guibg=NvimDarkGrey1'
+cmd 'highlight DiagnosticFloatingWarn   ctermfg=11  ctermbg=232 guifg=Yellow    guibg=NvimDarkGrey1'
+cmd 'highlight DiagnosticFloatingInfo   ctermfg=12  ctermbg=232 guifg=LightBlue guibg=NvimDarkGrey1'
+cmd 'highlight DiagnosticFloatingHint   ctermfg=252 ctermbg=232 guifg=LightGrey guibg=NvimDarkGrey1'
+cmd 'highlight DiagnosticFloatingOk     ctermfg=10  ctermbg=232 guifg=Green     guibg=NvimDarkGrey1'
+cmd 'highlight DiagnosticDeprecated     cterm=strikethrough gui=strikethrough guisp=Red'
+
+cmd 'highlight lualine_b_diagnostics_error_normal   ctermfg=9   ctermbg=0 guifg=#ff0000 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_error_insert   ctermfg=9   ctermbg=0 guifg=#ff0000 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_error_visual   ctermfg=9   ctermbg=0 guifg=#ff0000 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_error_replace  ctermfg=9   ctermbg=0 guifg=#ff0000 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_error_command  ctermfg=9   ctermbg=0 guifg=#ff0000 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_error_terminal ctermfg=9   ctermbg=0 guifg=#ff0000 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_error_inactive ctermfg=9   ctermbg=0 guifg=#ff0000 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_warn_normal    ctermfg=11  ctermbg=0 guifg=#ffff00 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_warn_insert    ctermfg=11  ctermbg=0 guifg=#ffff00 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_warn_visual    ctermfg=11  ctermbg=0 guifg=#ffff00 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_warn_replace   ctermfg=11  ctermbg=0 guifg=#ffff00 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_warn_command   ctermfg=11  ctermbg=0 guifg=#ffff00 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_warn_terminal  ctermfg=11  ctermbg=0 guifg=#ffff00 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_warn_inactive  ctermfg=11  ctermbg=0 guifg=#ffff00 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_info_normal    ctermfg=12  ctermbg=0 guifg=#0000ff guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_info_insert    ctermfg=12  ctermbg=0 guifg=#0000ff guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_info_visual    ctermfg=12  ctermbg=0 guifg=#0000ff guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_info_replace   ctermfg=12  ctermbg=0 guifg=#0000ff guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_info_command   ctermfg=12  ctermbg=0 guifg=#0000ff guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_info_terminal  ctermfg=12  ctermbg=0 guifg=#0000ff guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_info_inactive  ctermfg=12  ctermbg=0 guifg=#0000ff guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_hint_normal    ctermfg=252 ctermbg=0 guifg=#d3d3d3 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_hint_insert    ctermfg=252 ctermbg=0 guifg=#d3d3d3 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_hint_visual    ctermfg=252 ctermbg=0 guifg=#d3d3d3 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_hint_replace   ctermfg=252 ctermbg=0 guifg=#d3d3d3 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_hint_command   ctermfg=252 ctermbg=0 guifg=#d3d3d3 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_hint_terminal  ctermfg=252 ctermbg=0 guifg=#d3d3d3 guibg=#000000'
+cmd 'highlight lualine_b_diagnostics_hint_inactive  ctermfg=252 ctermbg=0 guifg=#d3d3d3 guibg=#00000'
