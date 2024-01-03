@@ -5,7 +5,7 @@ cmd 'colorscheme 256_noir'
 cmd 'highlight VertSplit   ctermfg=236 ctermbg=0'
 cmd 'highlight LineNr      cterm=none ctermfg=239'
 cmd 'highlight SignColumn  ctermbg=0'
-cmd 'highlight ColorColumn ctermbg=232'
+cmd 'highlight ColorColumn cterm=none ctermbg=232'
 
 cmd 'highlight Pmenu       ctermbg=236'
 
